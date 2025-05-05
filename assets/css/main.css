@@ -12,6 +12,12 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
+  --default-font: "Merriweather", serif;
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Merriweather", serif;
+}
+
+:root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
@@ -37,6 +43,13 @@
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+:root {
+  --default-font: "Merriweather", serif;
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Merriweather", serif;
+}
+
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
@@ -46,6 +59,53 @@
 
 .dark-background {
   --background-color: #040b14;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors */
+:root { 
+  --background-color: #000319; /* Updated */
+  --default-color: #ffffff;    /* Updated for contrast on dark background */
+  --heading-color: #ffffff;    /* Updated */
+  --accent-color: #149ddd;     /* Keep or change this if you'd like it to stand out against dark bg */
+  --surface-color: #151f2b;    /* Subtle contrast on top of dark background */
+  --contrast-color: #ffffff;
+}
+
+/* Nav Menu Colors */
+:root {
+  --nav-color: #a8a9b4;
+  --nav-hover-color: #ffffff;
+  --nav-mobile-background-color: #000319; /* Matches new background */
+  --nav-dropdown-background-color: #000319;
+  --nav-dropdown-color: #a8a9b4;
+  --nav-dropdown-hover-color: #ffffff;
+}
+
+/* Color Presets */
+.light-background {
+  --background-color: #f4fafd;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #000319; /* Matches root background */
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #151f2b;
@@ -366,7 +426,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #000319;
   font-size: 14px;
   padding: 40px 0;
   position: relative;
@@ -1272,4 +1332,22 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+:root {
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+
+nav, .navbar {
+  font-family: var(--nav-font);
 }
